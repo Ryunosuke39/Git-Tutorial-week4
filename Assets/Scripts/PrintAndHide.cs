@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConsolePrint : MonoBehaviour
+//name has changed from ConsolePrint 
+public class PrintAndHide : MonoBehaviour
 {
     public int i;
+    public Renderer rend;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,6 @@ public class ConsolePrint : MonoBehaviour
     void Update()
     {
         ++i;
-        Debug.Log(gameObject.name + i);
+        Debug.Log(gameObject.name + ":" + i);
     }
 }
